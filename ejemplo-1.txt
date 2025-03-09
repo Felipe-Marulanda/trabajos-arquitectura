@@ -1,0 +1,13 @@
+.globl _start
+
+.text
+
+_start:
+
+       mov -bashx3F, %al
+       mov -bashxF3, %ah
+
+       # salir al sistema
+       mov 0, %rax
+       xor %rdi, %rdi
+       syscall
